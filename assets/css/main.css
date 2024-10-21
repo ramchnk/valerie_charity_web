@@ -1013,7 +1013,6 @@ section,
   border-top: 4px solid var(--background-color);
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-top: -60px;
   transition: 0.3s;
 }
 
