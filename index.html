@@ -38,7 +38,8 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
         <div> 
-          <h1 class="sitename">Valerie ❤ Charity</h1><br>
+          <div style="color:#ddca69">Welcome to</div><br>
+          <h1 class="sitename">Valerie <span style="color:red;">❤</span> Charity</h1><br>
           <div style="color:#ddca69">Spreading Love, Changing Lives</div>
         </div>
       </a>
@@ -46,10 +47,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="our-story.html">Our Story</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -60,21 +61,49 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="hero-carousel" class="carousel slide carousel-fade desktop-only" data-bs-ride="carousel" data-bs-interval="5000">
 
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-        </div><!-- End Carousel Item -->
+        <div class="desktop-only ram-des">
+          <div class="carousel-item active">
+            <img src="assets/img/hero-carousel/hero-slide-desktop-1.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-des">
+            <img src="assets/img/hero-carousel/hero-slide-desktop-2.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-des">
+            <img src="assets/img/hero-carousel/hero-slide-desktop-3.jpg"  alt="">
+          </div>
+        </div>
+      </div>
+      <div id="hero-carousel" class="carousel ram-test slide carousel-fade mobile-only" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="mobile-only">
+          <div class="carousel-item ram-mob active">
+            <img src="assets/img/hero-carousel/hero-slide-image-1.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-slide-image-2.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-slide-image-3.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-slide-image-4.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-slide-image-5.jpg" alt="">
+          </div>
+          <div class="carousel-item ram-mob">
+            <img src="assets/img/hero-carousel/hero-slide-image-6.jpg" alt="">
+          </div>
+        </div>
+      </div>
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-        </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-        </div><!-- End Carousel Item -->
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
@@ -88,6 +117,285 @@
       </div>
 
     </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <img src="assets/img/about.jpg" class="img-fluid ram-story" alt="">
+          </div>
+          <div class="col-lg-6 content" style="font-size: 17px;">
+            <p>
+              <b style="font-size: 21px;">Valerie ❤ Charity</b> was founded in July 2015 in Hong Kong. Our vision is to support people in need and impoverished Southeast Asian communities, helping improve their living standards.
+            </p>
+            <p>From 2015 to 2020, we operated under <b style="font-size: 21px;">"Cook For a Smile."</b> During this time, we offered cooking classes focused on Vietnamese and Cambodian cuisine for anyone interested in preparing meals for their loved ones. All fees collected from these classes were donated to NGOs and charities assisting Southeast Asian people.
+            </p>
+            <p>In December 2022, following the COVID-19 pandemic, Valerie devised a fantastic idea to make and sell nougats to our friends and family in France and Hong Kong to raise money for charity.
+            </p>
+            <p>In October 2023, we took a significant step in our journey by rebranding our charity association from Cook For a Smile to <b style="font-size: 21px;">Valerie ❤ Charity.</b> This transition reflects our unwavering commitment to our mission and the communities we serve.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/OUFU1cMEuuA?controls=0&modestbranding=0&rel=0&autohide=1&showinfo=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Charity Event in slum area in Phnom Penh</h5>
+                <p class="fst-italic text-center">Tuesday, October 8th, 2024, at 9:30 am</p>
+                <p class="card-text">We helped 120 families living in the Slum area of Shrouy Chanvar in Phnom Penh. We donated a 10 kg rice bag, food bag, bread, hygiene products, and toys to each family.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YFeCxE3j2NE?controls=0&modestbranding=0&rel=0&autohide=1&showinfo=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Helping SOS Maman-Bebe in Phnom Penh</h5>
+                <p class="fst-italic text-center">Tuesday, October 8th, 2024, at 2:15 pm</p>
+                <p class="card-text">We donate milk, clothing, and materials to 44 poor babies   </p>
+              </div>
+            </div>
+
+          </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/sgwEefJuqj8?controls=0&modestbranding=0&rel=0&autohide=1&showinfo=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cooking for homeless children in Phnom Penh</h5>
+                <p class="fst-italic text-center">Tuesday, February 27th, 2024, at 10 am</p>
+                <p class="card-text">We cooked Cambodian Curry for 110 homeless children at the Restaurant des Enfants in Phnom Penh   </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/5LSdLzOnwgU?controls=0&modestbranding=0&rel=0&autohide=1&showinfo=0"  title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Donations to Elderly people in Siem Reap</h5>
+                <p class="fst-italic text-center">Saturday, March 2nd, 2024, at 10:30 am</p>
+                <p class="card-text">We donated a 10 kg rice bag to 40 elderly women living in poor village near Siem Reap</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.975436966906!2d114.1703173761308!3d22.278920279701936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005c6d8c71a7%3A0x662e9fa3f71fb7b7!2s17%2FF%2C%2080%20Gloucester%20Rd%2C%20Wan%20Chai%2C%20Hong%20Kong!5e0!3m2!1sen!2sin!4v1729599668434!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>17/F 80 Gloucester Road, Wan Chai Hong Kong</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+852 5362 2258     </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>Valeriecharity@yahoo.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
   </main>
 
   <!-- Scroll Top -->

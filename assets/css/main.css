@@ -280,6 +280,7 @@ h6 {
   }
 }
 
+
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -639,6 +640,28 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+.mobile-only {
+  display: none;
+}
+
+/* Show desktop images only on larger screens */
+.desktop-only {
+  display: block;
+}
+
+/* On smaller screens (mobile), adjust visibility */
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+
 .hero {
   padding: 0;
 }
@@ -649,14 +672,29 @@ section,
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
-  position: relative;
+}
+
+.ram-story{
+  height: 70%;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 74vh; /* Reduced height for mobile devices */
+    padding:10px;
+  }
+
+  .ram-story{
+    height: 100%;
+    width: 100%;
+  }       
 }
 
 .hero img {
   position: absolute;
   inset: 0;
-  display: block;
-  width: 100%;
   object-fit: cover;
   z-index: 1;
 }

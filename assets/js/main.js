@@ -106,7 +106,17 @@
    * Auto generate the carousel indicators
    */
   document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
-    carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => {
+    carouselIndicator.closest('.carousel').querySelectorAll('.ram-des').forEach((carouselItem, index) => {
+      if (index === 0) {
+        carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;
+      } else {
+        carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}"></li>`;
+      }
+    });
+  });
+
+  document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
+    carouselIndicator.closest('.ram-test').querySelectorAll('.ram-mob').forEach((carouselItem, index) => {
       if (index === 0) {
         carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;
       } else {
